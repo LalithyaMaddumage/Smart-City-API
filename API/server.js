@@ -31,3 +31,11 @@ connection.once("open", () => {
 
 const Fuel = require("./routes/fuelRoute");
 app.use("/Fuel", Fuel);
+
+//water
+const Water = require("./routes/waterRouter");
+app.use("/Water", Water);
+
+//electricity
+const Electricity = require("./routes/electricityRouter");
+app.use("/Electricity", Electricity);
