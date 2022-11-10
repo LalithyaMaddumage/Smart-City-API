@@ -34,3 +34,6 @@ app.use("/Fuel", Fuel);
 
 const Gas = require("./routes/gasRoute");
 app.use("/Gas", Gas);
+
+const Event = require("./routes/eventRoute");
+app.use("/Event", Event);
