@@ -33,9 +33,9 @@ const Fuel = require("./routes/fuelRoute");
 app.use("/Fuel", Fuel);
 
 //water
-const Water = require("./routes/waterRouter");
+const Water = require("./routes/waterRoute");
 app.use("/Water", Water);
 
 //electricity
-const Electricity = require("./routes/electricityRouter");
+const Electricity = require("./routes/electricityRoute");
 app.use("/Electricity", Electricity);

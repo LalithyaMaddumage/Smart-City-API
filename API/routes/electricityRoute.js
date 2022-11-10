@@ -46,7 +46,7 @@ router.get("/getEShedule", async(req,res) =>{
     }
 })
 
-//update water details
+//update electricity details
 router.route("/updateEShedule/:id").put(async(req,res)=>{
     console.log("update power cut shedule", req.body);
 
@@ -71,7 +71,7 @@ router.route("/updateEShedule/:id").put(async(req,res)=>{
     console.log("updated....",update);
 })
 
-//delete water details
+//delete electricity details
 router.route("/deleteEShedule/:id").delete(async(req,res)=>{
     console.log ("delete power cut shedule" , req.body);
 
