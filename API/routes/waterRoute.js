@@ -37,7 +37,9 @@ router.post("/AddWShedule", async(req,res)=>{
 
 //get all water details
 router.get("/getWShedule", async(req,res) =>{
+    console.log("bckeend");
     try{
+        console.log("try...");
         const response = await Water.find();
         return res.status(200).send({status:"Success", data: response});
     }catch(error){

@@ -37,7 +37,9 @@ router.post("/AddEShedule", async(req,res)=>{
 
 //get all electricity details
 router.get("/getEShedule", async(req,res) =>{
+    console.log("bckeend");
     try{
+        console.log("try...");
         const response = await Electricity.find();
         return res.status(200).send({status:"Success", data: response});
     }catch(error){
