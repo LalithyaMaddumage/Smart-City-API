@@ -32,8 +32,21 @@ connection.once("open", () => {
 const Fuel = require("./routes/fuelRoute");
 app.use("/Fuel", Fuel);
 
+//water
+const Water = require("./routes/waterRoute");
+app.use("/Water", Water);
+
+//electricity
+const Electricity = require("./routes/electricityRoute");
+app.use("/Electricity", Electricity);
+
+//login
+const Login = require("./routes/loginRoute");
+app.use("/Login", Login);
+=======
 const Gas = require("./routes/gasRoute");
 app.use("/Gas", Gas);
 
 const Event = require("./routes/eventRoute");
 app.use("/Event", Event);
+
