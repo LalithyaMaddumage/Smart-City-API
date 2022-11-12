@@ -97,7 +97,7 @@ router.route("/deletePT/:id").delete(async (req, res) => {
    
        
 
-    const deletePublicTransport = await Fuel.findByIdAndDelete(PublicTransportId).then((response) => {
+    const deletePublicTransport = await PublicTransport.findByIdAndDelete(PublicTransportId).then((response) => {
         // console.log("llllllllllll",response);
         res.status(200).send({ status: "Public Transport Details Delete" })
 

@@ -32,5 +32,10 @@ connection.once("open", () => {
 const Fuel = require("./routes/fuelRoute");
 app.use("/Fuel", Fuel);
 
+//public transport
 const PublicTransport = require("./routes/publicTransportRoute");
 app.use("/publicTransport", PublicTransport);
+
+//private transport
+const PrivateTransport = require("./routes/privateTransportRoute");
+app.use("/privateTransport", PrivateTransport);
