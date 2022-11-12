@@ -43,3 +43,10 @@ app.use("/Electricity", Electricity);
 //login
 const Login = require("./routes/loginRoute");
 app.use("/Login", Login);
+=======
+const Gas = require("./routes/gasRoute");
+app.use("/Gas", Gas);
+
+const Event = require("./routes/eventRoute");
+app.use("/Event", Event);
+
