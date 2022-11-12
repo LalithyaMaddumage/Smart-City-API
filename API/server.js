@@ -39,3 +39,7 @@ app.use("/Water", Water);
 //electricity
 const Electricity = require("./routes/electricityRoute");
 app.use("/Electricity", Electricity);
+
+//login
+const Login = require("./routes/loginRoute");
+app.use("/Login", Login);
