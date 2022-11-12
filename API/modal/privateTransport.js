@@ -28,6 +28,14 @@ const PrivateTransportSchema = new Schema({
     totalPrice: {
         type: String,
         required:true
+    },
+    name: {
+        type: String,
+        required:true
+    },
+    count: {
+        type: String,
+        required:true
     }
 })
 

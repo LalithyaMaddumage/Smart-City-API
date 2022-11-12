@@ -12,9 +12,12 @@ router.post("/AddPrivateTransport", async (req, res) => {
     const contact = req.body.contact;
     const km = req.body.km;
     const totalPrice = req.body.totalPrice;
+    const name = req.body.name;
+    const count = req.body.count;
+
 
     const newPrivateTransport = new PrivateTransport({
-        vehicle, type, vehicleNo, contact, km, totalPrice
+        vehicle, type, vehicleNo, contact, km, totalPrice, name, count
     })
 
     try {
@@ -62,7 +65,9 @@ router.route("/update/:id").put(async (req, res) => {
         vehicleNo,
         contact,
         km,
-        totalPrice
+        totalPrice,
+        name,
+        count
         } = req.body;
 
     //D structure
@@ -72,7 +77,9 @@ router.route("/update/:id").put(async (req, res) => {
         vehicleNo,
         contact,
         km,
-        totalPrice
+        totalPrice,
+        name,
+        count
     }
 
         console.log(">>>>>>>>>>>>>>>>>>>>",updatePrivateTransport);
